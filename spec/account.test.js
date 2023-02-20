@@ -36,4 +36,8 @@ describe("Account", () => {
     account.deposit(300);
     expect(account.getAccountBalance()).toBe(500);
   });
+
+  it("fails when a withdrawl is made when there are no funds", () => {
+    expect(() => { account.withdraw(100) }).toThrow("Insufficient funds");
+  })
 })

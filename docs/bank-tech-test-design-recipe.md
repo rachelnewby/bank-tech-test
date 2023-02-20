@@ -135,7 +135,6 @@ account.getAccountActivituy() => []
 const account = new Account;
 account.deposit(300.00)
 account.getAccountBalance() => 300
-account.getAccountActivity() => [{date: "20/02/2023", credit: 300, debit: "", balance: 300}]
 
 // When money is deposited and withdrawn
 const account = new Account;

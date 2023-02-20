@@ -17,4 +17,10 @@ describe("Account", () => {
     account.deposit(300.00);
     expect(account.getAccountBalance()).toBe(300);
   });
+
+  it("when money is deposited, then withdrawn, the correct balance is returned", () => {
+    account.deposit(300);
+    account.withdraw(100);
+    expect(account.getAccountBalance()).toBe(200);
+  });
 })

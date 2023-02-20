@@ -23,4 +23,17 @@ describe("Account", () => {
     account.withdraw(100);
     expect(account.getAccountBalance()).toBe(200);
   });
+
+  it("when multiple deposits are made, the correct balance is returned", () => {
+    account.deposit(300);
+    account.deposit(100);
+    expect(account.getAccountBalance()).toBe(400);
+  });
+
+  it("when multiple deposits and withdrawls are made, the correct balance is returned", () => {
+    account.deposit(300);
+    account.withdraw(100);
+    account.deposit(300);
+    expect(account.getAccountBalance()).toBe(500);
+  });
 })

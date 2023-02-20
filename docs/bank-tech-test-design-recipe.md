@@ -123,6 +123,14 @@ statement.print => "No transactions to show"
 ```js
 // Account Test cases: 
 
+// When no money has been deposited or withdrawn, initially:
+const account = new Account;
+account.getAccountBalance() => 0
+
+// When no money has been deposited or withdrawn, initially:
+const account = new Account;
+account.getAccountActivituy() => []
+
 // When money is deposited
 const account = new Account;
 account.deposit(300.00)
@@ -160,7 +168,7 @@ const accountDouble = { getAccountActivity: () => [{date: {2023-02-20T17:14:21.2
 const statement = new Statement(accountDouble);
 statement.print = "date || credit || debit || balance\n20/02/2023 || 300.00 || || 300.00\n20/02/2023 || || 100.00 || 200.00"
 
-const accountDouble = { getAccountActivity: () => [{}]}
+const accountDouble = { getAccountActivity: () => []}
 statement.print = "No transactions to show"
 
 ```

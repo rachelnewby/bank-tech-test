@@ -39,4 +39,7 @@ describe("Banking app", () => {
     expect(statement.print()).toEqual(`date || credit || debit || balance\n${this.date} || 100.00 ||  || 100.00\n${this.date} ||  || 100.00 || 0.00\n${this.date} || 300.00 ||  || 300.00\n${this.date} ||  || 200.00 || 100.00`)
   })
 
+  it("throws an error if a user tries to withdraw before depositing any money", () => {
+    expect(() => { account.withdraw(100)}).toThrow("Insufficient funds")
+  })
 })

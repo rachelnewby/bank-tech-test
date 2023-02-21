@@ -56,6 +56,22 @@ describe("Statement", () => {
     expect(statement.print()).toEqual("date || credit || debit || balance\n11/02/2023 || 1000.82 ||  || 1000.82")
   })
 
+  it("#print returns string with relevant information when numbers passed in have one passed the decimal point", () => {
+    const date = new Date();
+    date.setDate(11)
+    date.setMonth(1)
+    let accountDouble = { getAccountActivity: () => [
+      {
+        date: date,
+        credit: 1000.8,
+        debit: "",
+        balance: 1000.8
+      }
+    ] }
+    const statement = new Statement(accountDouble);
+    expect(statement.print()).toEqual("date || credit || debit || balance\n11/02/2023 || 1000.80 ||  || 1000.80")
+  })
+
   it("#print returns string with relevant information, checks month formatter", () => {
     const date = new Date();
     date.setDate(11)

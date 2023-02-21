@@ -61,7 +61,7 @@ class Statement {
     this.currentBalance // will get the current balance of the account via the getAccountBalance function
   }
 
-  printStatement() // Won't take an argument
+  print() // Won't take an argument
   // Will print the statement (of the accountActivity) using a private function
 
   #formatStatement() // Won't take an argument

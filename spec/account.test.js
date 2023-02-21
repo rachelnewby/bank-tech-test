@@ -40,4 +40,9 @@ describe("Account", () => {
   it("fails when a withdrawl is made when there are no funds", () => {
     expect(() => { account.withdraw(100) }).toThrow("Insufficient funds");
   })
+
+  it("fails if a string is passed as an argument", () => {
+    expect(() => { account.deposit("100") }).toThrow("Amount must be a number");
+  })
+
 })

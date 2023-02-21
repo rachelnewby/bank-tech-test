@@ -154,11 +154,11 @@ account.withdraw(100.00) => raise error "Insufficient funds"
 
 // When someone tries to deposit money with a string - fail 
 const account = new Account; 
-account.deposit("50") => raise error "Input must be a number"
+account.deposit("50") => raise error "Amount must be a number"
 
 // When someone tries to withdraw money with a string - fail 
 const account = new Account; 
-account.withdraw("50") => raise error "Input must be a number"
+account.withdraw("50") => raise error "Amount must be a number"
 
 
 // Statement Test cases: 

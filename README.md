@@ -25,7 +25,7 @@ Started by developing user stories to understand the full scale of the requireme
 A class system was designed, taking into consideration the required input and output, and how the user would interact with the program. 
 I chose a two-class system for this challenge; the responsbility of ```Account```  is to handle and store the transactions. The responsibility of ```Statement``` is to print out the statement in the required format. This is to make it easier to change the format of the statement when required (for instance, if statements are required in the USA, the date format can be amended appropriately). It also means that statements can be printed for multiple accounts without the need to repeat code. 
 
-***The user stories, diagram, and full design can be found in the docs file, in the design-recipe.md.***
+The user stories, diagram, and full design can be found here: https://github.com/rachelnewby/bank-tech-test/blob/main/docs/bank-tech-test-design-recipe.md
 
 ## To Run The Code
 This program was built in JavaScript and uses the Jest test suit. It requires the following

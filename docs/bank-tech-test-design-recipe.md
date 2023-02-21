@@ -64,9 +64,6 @@ class Statement {
   print() // Won't take an argument
   // Will print the statement (of the accountActivity) using a private function
 
-  #formatStatement() // Won't take an argument
-  // Will format the statement to read the way it's required
-
   #amountFormatter(amount) // Will take a number as an argument
   // Returns the amount as a string formatted in the required way (with '.00' if an integer given)
 

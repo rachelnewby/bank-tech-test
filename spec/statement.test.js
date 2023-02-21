@@ -45,7 +45,7 @@ describe("Statement", () => {
       }
     ] }
     const statement = new Statement(accountDouble);
-    expect(statement.print()).toEqual("date || credit || debit || balance\n10/01/2023 || 1000.00 ||  || 1000.00\n13/01/2023 || 2000.00 ||  || 3000.00")
+    expect(statement.print()).toEqual("date || credit || debit || balance\n13/01/2023 || 2000.00 ||  || 3000.00\n10/01/2023 || 1000.00 ||  || 1000.00")
   })
 
   it("#print returns string with relevant information when multiple transactions have been made", () => {
@@ -77,6 +77,6 @@ describe("Statement", () => {
       }
     ] }
     const statement = new Statement(accountDouble);
-    expect(statement.print()).toEqual("date || credit || debit || balance\n10/01/2023 || 1000.00 ||  || 1000.00\n13/01/2023 || 2000.00 ||  || 3000.00\n14/01/2023 ||  || 500.00 || 2500.00")
+    expect(statement.print()).toEqual("date || credit || debit || balance\n14/01/2023 ||  || 500.00 || 2500.00\n13/01/2023 || 2000.00 ||  || 3000.00\n10/01/2023 || 1000.00 ||  || 1000.00")
   })
 })

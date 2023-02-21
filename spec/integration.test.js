@@ -28,13 +28,13 @@ describe("Banking app", () => {
   it("prints a statment with the deposit and withdrawal", () => {
     account.deposit(100);
     account.withdraw(100)
-    expect(statement.print()).toEqual(`date || credit || debit || balance\n${this.date} || 100.00 ||  || 100.00\n${this.date} ||  || 100.00 || 0.00`)
+    expect(statement.print()).toEqual(`date || credit || debit || balance\n${this.date} ||  || 100.00 || 0.00\n${this.date} || 100.00 ||  || 100.00`)
   })
 
   it("prints a statment with the deposit and withdrawal", () => {
     account.deposit(100.50);
     account.withdraw(100.10)
-    expect(statement.print()).toEqual(`date || credit || debit || balance\n${this.date} || 100.50 ||  || 100.50\n${this.date} ||  || 100.10 || 0.40`)
+    expect(statement.print()).toEqual(`date || credit || debit || balance\n${this.date} ||  || 100.10 || 0.40\n${this.date} || 100.50 ||  || 100.50`)
   })
 
   it("prints a statment with multiple deposits and withdrawals", () => {
@@ -42,7 +42,7 @@ describe("Banking app", () => {
     account.withdraw(100);
     account.deposit(300);
     account.withdraw(200);
-    expect(statement.print()).toEqual(`date || credit || debit || balance\n${this.date} || 100.00 ||  || 100.00\n${this.date} ||  || 100.00 || 0.00\n${this.date} || 300.00 ||  || 300.00\n${this.date} ||  || 200.00 || 100.00`)
+    expect(statement.print()).toEqual(`date || credit || debit || balance\n${this.date} ||  || 200.00 || 100.00\n${this.date} || 300.00 ||  || 300.00\n${this.date} ||  || 100.00 || 0.00\n${this.date} || 100.00 ||  || 100.00`)
   })
 
   it("prints a statment with multiple deposits and withdrawals", () => {
@@ -50,7 +50,7 @@ describe("Banking app", () => {
     account.withdraw(100);
     account.deposit(300.32);
     account.withdraw(200.03);
-    expect(statement.print()).toEqual(`date || credit || debit || balance\n${this.date} || 100.48 ||  || 100.48\n${this.date} ||  || 100.00 || 0.48\n${this.date} || 300.32 ||  || 300.80\n${this.date} ||  || 200.03 || 100.77`)
+    expect(statement.print()).toEqual(`date || credit || debit || balance\n${this.date} ||  || 200.03 || 100.77\n${this.date} || 300.32 ||  || 300.80\n${this.date} ||  || 100.00 || 0.48\n${this.date} || 100.48 ||  || 100.48`)
   })
 
   it("throws an error if a user tries to withdraw before depositing any money", () => {

@@ -45,4 +45,8 @@ describe("Account", () => {
     expect(() => { account.deposit("100") }).toThrow("Amount must be a number");
   })
 
+  it("#withdraw fails if a string is passed as an argument", () => {
+    expect(() => { account.withdraw("100") }).toThrow("Amount must be a number");
+  })
+
 })

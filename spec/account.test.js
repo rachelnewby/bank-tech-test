@@ -56,4 +56,8 @@ describe("Account", () => {
   it("#withdraw fails if an array is passed as an argument", () => {
     expect(() => { account.withdraw([]) }).toThrow("Amount must be a number");
   })
+
+  it("#withdraw fails if a number with more than two decimal places is passed as argument", () => {
+    expect(() => { account.withdraw(200.893) }).toThrow("Number incorrect format for monetary value");
+  })
 })

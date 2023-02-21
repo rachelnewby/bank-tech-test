@@ -71,4 +71,12 @@ describe("Account", () => {
       expect.arrayContaining([expect.objectContaining({credit: 300})])
     )
   });
+
+  it("#getAccountActivity returns array of objects", () => {
+    account.deposit(300.00)
+    account.withdraw(100)
+    expect(account.getAccountActivity()).toEqual(
+      expect.arrayContaining([expect.objectContaining({debit: 100, balance: 200})])
+    )
+  });
 })

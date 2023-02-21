@@ -42,4 +42,8 @@ describe("Banking app", () => {
   it("throws an error if a user tries to withdraw before depositing any money", () => {
     expect(() => { account.withdraw(100)}).toThrow("Insufficient funds")
   })
+
+  it("throws an error if a user tries to add in a value as a string", () => {
+    expect(() => { account.deposit("100") }).toThrow("Amount must be a number");
+  })
 })

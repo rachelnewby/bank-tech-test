@@ -60,4 +60,8 @@ describe("Account", () => {
   it("#withdraw fails if a number with more than two decimal places is passed as argument", () => {
     expect(() => { account.withdraw(200.893) }).toThrow("Number incorrect format for monetary value");
   })
+
+  it("#deposit fails if a number with more than two decimal places is passed as argument", () => {
+    expect(() => { account.deposit(200.893) }).toThrow("Number incorrect format for monetary value");
+  })
 })

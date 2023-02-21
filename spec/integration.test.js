@@ -31,6 +31,12 @@ describe("Banking app", () => {
     expect(statement.print()).toEqual(`date || credit || debit || balance\n${this.date} || 100.00 ||  || 100.00\n${this.date} ||  || 100.00 || 0.00`)
   })
 
+  it("prints a statment with the deposit and withdrawal", () => {
+    account.deposit(100.50);
+    account.withdraw(100.10)
+    expect(statement.print()).toEqual(`date || credit || debit || balance\n${this.date} || 100.50 ||  || 100.50\n${this.date} ||  || 100.10 || 0.40`)
+  })
+
   it("prints a statment with multiple deposits and withdrawals", () => {
     account.deposit(100);
     account.withdraw(100);

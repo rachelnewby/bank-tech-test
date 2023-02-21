@@ -64,4 +64,11 @@ describe("Account", () => {
   it("#deposit fails if a number with more than two decimal places is passed as argument", () => {
     expect(() => { account.deposit(200.893) }).toThrow("Number incorrect format for monetary value");
   })
+
+  it("#getAccountActivity returns array of objects", () => {
+    account.deposit(300.00)
+    expect(account.getAccountActivity()).toEqual(
+      expect.arrayContaining([expect.objectContaining({credit: 300})])
+    )
+  });
 })

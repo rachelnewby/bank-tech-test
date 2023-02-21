@@ -58,11 +58,17 @@ describe("Account", () => {
   })
 
   it("#withdraw fails if a number with more than two decimal places is passed as argument", () => {
+    account.deposit(300)
     expect(() => { account.withdraw(200.893) }).toThrow("Number incorrect format for monetary value");
   })
 
   it("#deposit fails if a number with more than two decimal places is passed as argument", () => {
     expect(() => { account.deposit(200.893) }).toThrow("Number incorrect format for monetary value");
+  })
+
+  it("#deposit allows user to input values with 2 decimal places", () => {
+    account.deposit(100.90)
+    expect(account.getAccountBalance()).toBe(100.9)
   })
 
   it("#getAccountActivity returns array of objects", () => {

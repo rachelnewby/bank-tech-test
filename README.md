@@ -23,7 +23,7 @@ date || credit || debit || balance
 ## The Solution
 Started by developing user stories to understand the full scale of the requirements, and selected the most recurring and relevant verbs and nouns. 
 A class system was designed, taking into consideration the required input and output, and how the user would interact with the program. 
-I chose a two-class system for this challenge; the responsbility of ```acount```  is to handle and store the transactions. The responsibility of ```statement``` is to print out the statement in the required format. The reason for this is that it should make it easier to change the format of the statement when required (for instance, if statements are required in the USA, the date format can be amended appropriately). This also means that statements can be printed for multiple accounts without the need to repeat code. 
+I chose a two-class system for this challenge; the responsbility of ```Account```  is to handle and store the transactions. The responsibility of ```Statement``` is to print out the statement in the required format. This is to make it easier to change the format of the statement when required (for instance, if statements are required in the USA, the date format can be amended appropriately). It also means that statements can be printed for multiple accounts without the need to repeat code. 
 
 ***The user stories, diagram, and full design can be found in the docs file, in the design-recipe.md.***
 
@@ -54,12 +54,12 @@ To run the code:
 No dependencies were used. I contemplated including jest-extension but I found I could use the matchers without relying on the extension and therefore decided against it.
 
 ## Screenshots: Example of program being used
-![Alt Text](https://raw.github.com/rachelnewby/banks-tech-test/main/docs/screenshots/bank-tech-test-single-deposit.png)
-![Alt Text](https://raw.github.com/rachelnewby/banks-tech-test/main/docs/screenshots/bank-tech-test-multiple-transactions.png)
-![Alt Text](https://raw.github.com/rachelnewby/banks-tech-test/main/docs/screenshots/bank-tech-test-edge-cases.png)
+![Alt Text](https://github.com/rachelnewby/bank-tech-test/blob/main/docs/screenshots/bank-tech-test-multiple-transactions.png)
+![Alt Text](https://github.com/rachelnewby/bank-tech-test/blob/main/docs/screenshots/bank-tech-test-single-deposit.png)
+![Alt Text](https://github.com/rachelnewby/bank-tech-test/blob/main/docs/screenshots/bank-tech-test-edge-cases.png)
 
 ## Over 95% Test Coverage
-![Alt Text](https://raw.github.com/rachelnewby/banks-tech-test/main/docs/screenshots/test-coverage.png)
+![Alt Text](https://github.com/rachelnewby/bank-tech-test/blob/main/docs/screenshots/test-coverage.png)
 
 ## Potential Issues
 There are potential issues if there are multiple amounts added with different 'penny amounts'. I.e: £42.62, £66.91, £88.05. Would need further stress testing and solutions to ensure the mathmatics are correct.

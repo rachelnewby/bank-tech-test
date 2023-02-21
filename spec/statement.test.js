@@ -40,6 +40,22 @@ describe("Statement", () => {
     expect(statement.print()).toEqual("date || credit || debit || balance\n11/02/2023 || 1000.82 ||  || 1000.82")
   })
 
+  it("#print returns string with relevant information", () => {
+    const date = new Date();
+    date.setDate(11)
+    date.setMonth(10)
+    let accountDouble = { getAccountActivity: () => [
+      {
+        date: date,
+        credit: 1000.82,
+        debit: "",
+        balance: 1000.82
+      }
+    ] }
+    const statement = new Statement(accountDouble);
+    expect(statement.print()).toEqual("date || credit || debit || balance\n11/11/2023 || 1000.82 ||  || 1000.82")
+  })
+
   it("#print returns string with relevant information when multiple transactions have been made", () => {
     const date = new Date();
     date.setDate(10);

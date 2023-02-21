@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1676991432880" clover="3.2.0">
-  <project timestamp="1676991432880" name="All files">
-    <metrics statements="54" coveredstatements="53" conditionals="22" coveredconditionals="20" methods="8" coveredmethods="8" elements="84" coveredelements="81" complexity="0" loc="54" ncloc="54" packages="1" files="2" classes="2"/>
+<coverage generated="1676991746992" clover="3.2.0">
+  <project timestamp="1676991746992" name="All files">
+    <metrics statements="54" coveredstatements="54" conditionals="22" coveredconditionals="21" methods="8" coveredmethods="8" elements="84" coveredelements="83" complexity="0" loc="54" ncloc="54" packages="1" files="2" classes="2"/>
     <file name="account.js" path="/Users/rachelnewby/Projects/Makers/week-10/bank-tech-test/lib/account.js">
       <metrics statements="22" coveredstatements="22" conditionals="8" coveredconditionals="8" methods="5" coveredmethods="5"/>
       <line num="3" count="25" type="stmt"/>
@@ -28,31 +28,31 @@
       <line num="56" count="2" type="stmt"/>
     </file>
     <file name="statement.js" path="/Users/rachelnewby/Projects/Makers/week-10/bank-tech-test/lib/statement.js">
-      <metrics statements="32" coveredstatements="31" conditionals="14" coveredconditionals="12" methods="3" coveredmethods="3"/>
-      <line num="3" count="13" type="stmt"/>
-      <line num="7" count="10" type="stmt"/>
-      <line num="8" count="10" type="cond" truecount="2" falsecount="0"/>
-      <line num="9" count="8" type="stmt"/>
-      <line num="10" count="8" type="stmt"/>
-      <line num="11" count="19" type="stmt"/>
-      <line num="12" count="19" type="stmt"/>
-      <line num="14" count="8" type="stmt"/>
-      <line num="15" count="8" type="stmt"/>
-      <line num="16" count="8" type="stmt"/>
-      <line num="20" count="19" type="stmt"/>
-      <line num="21" count="19" type="stmt"/>
-      <line num="22" count="19" type="stmt"/>
-      <line num="23" count="19" type="cond" truecount="1" falsecount="1"/>
-      <line num="24" count="19" type="stmt"/>
-      <line num="25" count="0" type="stmt"/>
-      <line num="26" count="19" type="stmt"/>
-      <line num="30" count="57" type="cond" truecount="2" falsecount="0"/>
-      <line num="31" count="38" type="stmt"/>
-      <line num="32" count="38" type="cond" truecount="2" falsecount="0"/>
-      <line num="33" count="11" type="stmt"/>
-      <line num="34" count="11" type="stmt"/>
-      <line num="35" count="11" type="cond" truecount="2" falsecount="0"/>
-      <line num="36" count="4" type="stmt"/>
+      <metrics statements="32" coveredstatements="32" conditionals="14" coveredconditionals="13" methods="3" coveredmethods="3"/>
+      <line num="3" count="15" type="stmt"/>
+      <line num="7" count="12" type="stmt"/>
+      <line num="8" count="12" type="cond" truecount="2" falsecount="0"/>
+      <line num="9" count="10" type="stmt"/>
+      <line num="10" count="10" type="stmt"/>
+      <line num="11" count="21" type="stmt"/>
+      <line num="12" count="21" type="stmt"/>
+      <line num="14" count="10" type="stmt"/>
+      <line num="15" count="10" type="stmt"/>
+      <line num="16" count="10" type="stmt"/>
+      <line num="20" count="21" type="stmt"/>
+      <line num="21" count="21" type="stmt"/>
+      <line num="22" count="21" type="stmt"/>
+      <line num="23" count="21" type="cond" truecount="2" falsecount="0"/>
+      <line num="24" count="20" type="stmt"/>
+      <line num="25" count="1" type="stmt"/>
+      <line num="26" count="21" type="stmt"/>
+      <line num="30" count="63" type="cond" truecount="2" falsecount="0"/>
+      <line num="31" count="42" type="stmt"/>
+      <line num="32" count="42" type="cond" truecount="2" falsecount="0"/>
+      <line num="33" count="15" type="stmt"/>
+      <line num="34" count="15" type="stmt"/>
+      <line num="35" count="15" type="cond" truecount="2" falsecount="0"/>
+      <line num="36" count="8" type="stmt"/>
       <line num="37" count="7" type="cond" truecount="2" falsecount="0"/>
       <line num="38" count="4" type="stmt"/>
       <line num="39" count="3" type="cond" truecount="1" falsecount="1"/>

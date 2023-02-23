@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1677162068413" clover="3.2.0">
-  <project timestamp="1677162068414" name="All files">
+<coverage generated="1677162535169" clover="3.2.0">
+  <project timestamp="1677162535170" name="All files">
     <metrics statements="39" coveredstatements="39" conditionals="14" coveredconditionals="14" methods="7" coveredmethods="7" elements="60" coveredelements="60" complexity="0" loc="39" ncloc="39" packages="1" files="2" classes="2"/>
     <file name="account.js" path="/Users/rachelnewby/Projects/Makers/week-10/bank-tech-test/lib/account.js">
       <metrics statements="21" coveredstatements="21" conditionals="8" coveredconditionals="8" methods="4" coveredmethods="4"/>
@@ -10,21 +10,21 @@
       <line num="9" count="18" type="stmt"/>
       <line num="10" count="17" type="stmt"/>
       <line num="11" count="17" type="stmt"/>
-      <line num="17" count="17" type="stmt"/>
-      <line num="21" count="15" type="stmt"/>
-      <line num="22" count="12" type="stmt"/>
-      <line num="23" count="11" type="cond" truecount="2" falsecount="0"/>
-      <line num="24" count="9" type="stmt"/>
-      <line num="25" count="9" type="stmt"/>
-      <line num="31" count="9" type="stmt"/>
-      <line num="35" count="17" type="stmt"/>
-      <line num="39" count="36" type="cond" truecount="2" falsecount="0"/>
-      <line num="43" count="30" type="stmt"/>
-      <line num="44" count="30" type="cond" truecount="2" falsecount="0"/>
-      <line num="45" count="8" type="stmt"/>
-      <line num="46" count="8" type="stmt"/>
-      <line num="47" count="8" type="cond" truecount="2" falsecount="0"/>
-      <line num="52" count="2" type="stmt"/>
+      <line num="12" count="17" type="stmt"/>
+      <line num="16" count="15" type="stmt"/>
+      <line num="17" count="12" type="stmt"/>
+      <line num="18" count="11" type="cond" truecount="2" falsecount="0"/>
+      <line num="19" count="9" type="stmt"/>
+      <line num="20" count="9" type="stmt"/>
+      <line num="21" count="9" type="stmt"/>
+      <line num="25" count="17" type="stmt"/>
+      <line num="29" count="36" type="cond" truecount="2" falsecount="0"/>
+      <line num="33" count="30" type="stmt"/>
+      <line num="34" count="30" type="cond" truecount="2" falsecount="0"/>
+      <line num="35" count="8" type="stmt"/>
+      <line num="36" count="8" type="stmt"/>
+      <line num="37" count="8" type="cond" truecount="2" falsecount="0"/>
+      <line num="42" count="2" type="stmt"/>
     </file>
     <file name="statement.js" path="/Users/rachelnewby/Projects/Makers/week-10/bank-tech-test/lib/statement.js">
       <metrics statements="18" coveredstatements="18" conditionals="6" coveredconditionals="6" methods="3" coveredmethods="3"/>

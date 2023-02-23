@@ -48,11 +48,7 @@ class Account {
   // Returns nothing 
 
   getAccountActivity() // Won't take any arugments
-  // Returns this.accountActivity 
-
-  getAccountBalance() // Won't take any arguments
-  // Returns this.balance
-
+  // Returns this.accountActivity
 }
 
 class Statement {
@@ -122,22 +118,21 @@ statement.print => "No transactions to show"
 
 // When no money has been deposited or withdrawn, initially:
 const account = new Account;
-account.getAccountBalance() => 0
+balance => 0
 
 // When no money has been deposited or withdrawn, initially:
 const account = new Account;
-account.getAccountActivituy() => []
+account.getAccountActivity() => []
 
 // When money is deposited
 const account = new Account;
 account.deposit(300.00)
-account.getAccountBalance() => 300
+balance => 300
 
 // When money is deposited and withdrawn
 const account = new Account;
 account.deposit(300.00)
 account.withdraw(100.00)
-account.getAccountBalance() => 200
 account.getAccountActivity() => [{date: "20/02/2023", credit: 300, debit: "", balance: 300}, {date: "20/02/2023", credit: "", debit: 100, balance: 200}]
 
 // When someone tries to withdraw money and there's no money to withdraw

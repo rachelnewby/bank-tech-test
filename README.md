@@ -58,8 +58,5 @@ No dependencies were used. I contemplated including jest-extension but I found I
 ![Alt Text](https://github.com/rachelnewby/bank-tech-test/blob/main/docs/screenshots/bank-tech-test-single-deposit.png)
 ![Alt Text](https://github.com/rachelnewby/bank-tech-test/blob/main/docs/screenshots/bank-tech-test-edge-cases.png)
 
-## Over 95% Test Coverage
+## 100% Test Coverage
 ![Alt Text](https://github.com/rachelnewby/bank-tech-test/blob/main/docs/screenshots/test-coverage.png)
-
-## Potential Issues
-There are potential issues if there are multiple amounts added with different 'penny amounts'. I.e: £42.62, £66.91, £88.05. Would need further stress testing and solutions to ensure the mathmatics are correct.

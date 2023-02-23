@@ -5,36 +5,36 @@ describe("Account", () => {
     account = new Account;
   });
 
-  it("when no money has been deposited or withdrawn, initially", () => {
-    expect(account.getAccountBalance()).toBe(0)
-  });
-
   it("when no money has been deposited or withdrawn, initially activity is []", () => {
     expect(account.getAccountActivity()).toEqual([])
   });
 
   it("when money is deposited, it stores the balance", () => {
     account.deposit(300.00);
-    expect(account.getAccountBalance()).toBe(300);
+    let resultSet = account.getAccountActivity();
+    expect(resultSet[0].balance).toEqual(300);
   });
 
   it("when money is deposited, then withdrawn, the correct balance is returned", () => {
     account.deposit(300);
     account.withdraw(100);
-    expect(account.getAccountBalance()).toBe(200);
+    let resultSet = account.getAccountActivity();
+    expect(resultSet[1].balance).toEqual(200);
   });
 
   it("when multiple deposits are made, the correct balance is returned", () => {
     account.deposit(300);
     account.deposit(100);
-    expect(account.getAccountBalance()).toBe(400);
+    let resultSet = account.getAccountActivity();
+    expect(resultSet[1].balance).toEqual(400);
   });
 
   it("when multiple deposits and withdrawls are made, the correct balance is returned", () => {
     account.deposit(300);
     account.withdraw(100);
     account.deposit(300);
-    expect(account.getAccountBalance()).toBe(500);
+    let resultSet = account.getAccountActivity();
+    expect(resultSet[2].balance).toBe(500);
   });
 
   it("#withdraw fails when a withdrawl is made when there are no funds", () => {
@@ -68,7 +68,8 @@ describe("Account", () => {
 
   it("#deposit allows user to input values with 2 decimal places", () => {
     account.deposit(100.90)
-    expect(account.getAccountBalance()).toBe(100.9)
+    let resultSet = account.getAccountActivity();
+    expect(resultSet[0].balance).toBe(100.9)
   })
 
   it("#getAccountActivity returns array of objects", () => {
